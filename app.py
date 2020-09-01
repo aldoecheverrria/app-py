@@ -1,8 +1,9 @@
-number = 1
-count = 0
-while number <= 10:
-    if (number % 2) == 0:
-        print(number)
-        count = count + 1
-    number = number + 1
-print(f"Tuvimos {count} números pares")
+def multiply(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number
+    return total
+
+
+print("Start")
+print(multiply(1, 2, 3))
