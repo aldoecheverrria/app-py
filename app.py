@@ -1,9 +1,10 @@
-def multiply(*numbers):
-    total = 1
-    for number in numbers:
-        total *= number
-    return total
-
-
-print("Start")
-print(multiply(1, 2, 3))
+letters = list("Hello World")
+matrix = [[0, 1], [2, 3]]
+numbers = list(range(20))
+combined = numbers + letters
+print(combined)
+print(len(letters))
+letters[1] = "$"
+print(letters[0:3])
+print(letters[::2])
+print(letters[::-2])
